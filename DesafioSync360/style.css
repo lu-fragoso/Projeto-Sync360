@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #00ACEE;
+}
+
+.container {
+  background-color: #0BD2D6;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-color: none ;
+  border-radius: 45px
+}
+
+.foto_perfil,
+#foto_perfil{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto; 
+}
+
+
+.info-usuario{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: auto;
+  
+}
+
+.form-container {
+  margin-top: 40px;
+}
+
+.form-container input[type="text"], 
+input[type="number"],
+.form-container textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.form-container input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.form-container input[type="submit"]:hover {
+  background-color: #4a984c;
+  margin: auto;
+}

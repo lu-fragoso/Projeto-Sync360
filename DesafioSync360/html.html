@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get and Update City</title>
+    <script>
+        var currentLatitude;
+        var currentLongitude;
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showLocation);
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function showLocation(position) {
+            currentLatitude = position.coords.latitude;
+            currentLongitude = position.coords.longitude;
+
+            // Call reverse geocoding API to get city name based on latitude and longitude
+            var apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${currentLatitude}&lon=${currentLongitude}&appid={OpenWeatherMap}`;
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    var cityName = data.name;
+                    document.getElementById("city").value = cityName;
+                })
+                .catch(error => {
+                    console.error("Error fetching city data:", error);
+                });
+        }
+
+        function updateCity() {
+            var newCity = document.getElementById("city").value;
+
+            // Update current city
+            alert("City updated to: " + newCity);
+        }
+    </script>
+</head>
+<body>
+    <h1>Get and Update City</h1>
+    <form>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" readonly>
+        <br>
+        <button type="button" onclick="getLocation()">Get City</button>
+        <br>
+        <label for="newCity">New City:</label>
+        <input type="text" id="newCity" name="newCity">
+        <br>
+        <button type="button" onclick="updateCity()">Update City</button>
+    </form>
+</body>
+</html>

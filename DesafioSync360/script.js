@@ -27,4 +27,12 @@ document.getElementById("update-form").addEventListener("submit", function(event
     document.getElementById("bio").textContent = bio;
   }
 
+  // limpando o campo do form
+  document.getElementById("nome-input").value = '';
+  document.getElementById("idade-input").value = '';
+  document.getElementById("localizacao-input").value = '';
+  document.getElementById("bio-input").value = '';
+
+
+
 });

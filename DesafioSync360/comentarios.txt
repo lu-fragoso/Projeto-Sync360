@@ -1,0 +1,22 @@
+Olá, boa noite.
+
+Vim aqui realizar alguns cometários sobre o desafio e sobre o meu desempenho.
+
+1º Ponto:
+Em relação ao desafio, achei bem legal e intuitivo. Acredito que é uma boa maneira de avaliar os candidatos.
+
+2º Ponto:
+Em relação ao meu desempenho pessoal, acredito que poderia ter me saído melhor, porém essa semana em específico estava quase sem tempo
+para programar, se fosse em algum final de semana acredito que poderia ter feito mais adicionais.
+Tentei implementar uma API que pegasse a localizacao com o JS, mas a API que tinha em mente era paga e não achei outra similar. Poderia
+realizar mais verificações e maneiras de alterar os dados. Como por exemplo na foto, não foi pedido para alterar, acredito que seria interssante.
+
+3º Ponto:
+Gostaria de agradecer a Oportunidade de estar tentando a vaga, acredito que se fosse empregado diretamente na área de programação, poderia 
+ter deixado mil vezes melhor.
+
+Muito obrigado por ler.
+
+Att, 
+
+Lucas G. Fragoso.
